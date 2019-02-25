@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:mysql://39.104.49.60:3306/paydemo?useSSL=false
+    #    url: jdbc:mysql://localhost:3306/springbootdemo?useSSL=false
+    username: root
+    password: 123456
+    tomcat:
+      max-active: 100
+      max-idle: 200
+      initial-size: 20
+      driver-class-name: com.mysql.jdbc.Driver
+    #    type: com.zaxxer.hikari.HikariDataSource
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  cache:
+    redis:
+      time-to-live: 60s
+    type: redis
+  redis:
+    host: 39.104.49.60
+    port: 6379
+    password: QQqq407716220
+    lettuce:
+      pool:
+        max-idle: 10
+        max-active: 10
+        min-idle: 5
+        max-wait: 100000ms
+    database: 0

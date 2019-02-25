@@ -16,6 +16,7 @@
         <module>xxpay-service</module>
         <module>xxpay-web</module>
         <module>xxpay-gateway</module>
+        <module>xxpay-auth</module>
     </modules>
 
     <parent>
@@ -49,6 +50,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.10</version>
         </dependency>
     </dependencies>
 
